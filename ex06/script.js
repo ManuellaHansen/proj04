@@ -1,0 +1,13 @@
+let peso = Number(prompt("Insira seu peso"));
+let altura = Number(prompt("Insira sua altura(em metros)"));
+let imc = Number(peso/(altura*altura))
+
+if (imc < 18.5) {
+    alert ("Abaixo do peso")
+}else if ( imc > 18.5 && imc < 24.9 ){
+    alert("Peso normal")
+}else if ( imc > 25 && imc < 29.9 ){
+    alert ("Sobrepeso")
+}else if (imc >= 30){
+    alert ("Obesidade")
+}
